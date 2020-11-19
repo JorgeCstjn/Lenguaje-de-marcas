@@ -1,0 +1,44 @@
+@charset "utf-8";
+body, html {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+#componentes {
+   height: 80%;
+   display: flex;
+   flex-flow: row;
+}
+nav, aside, header, footer {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	font-size:1.5em;
+	border:solid 1px black;
+	box-sizing:border-box;
+}
+#componentes article {
+	flex: 3 1 60%;
+  order: 2;
+  display: block;
+  text-align: center;
+  margin-top: 3%;
+}
+#componentes nav {
+	flex: 1 6 20%;
+	order: 1;
+    background-color: red;
+    color: white;
+}
+#componentes aside {
+	flex: 1 6 20%;
+	order: 3;
+    background-color: red;
+    color:white;
+}
+header, footer {
+	min-height: 15%;
+    background-color: blue;
+    color: white;
+}
